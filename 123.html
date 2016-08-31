@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .card{width:140px;height:140px}
+    </style>
+    <script>
+        var a1 = true;
+        function flipA1(){
+            if(a1){
+                document.getElementById("A1").src="http://l7.alamy.com/zooms/177e69cb1b9b4692a8e2a5bf22d27efb/10-ten-dollar-bill-note-bills-notes-dollars-c4yc19.jpg";}
+            else{
+                document.getElementById("A1").src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";
+            }
+            a1 = !a1;
+        }
+
+        var b3 = true;
+        function flipB3(){
+            if(b3){
+                document.getElementById("B3").src="http://l7.alamy.com/zooms/177e69cb1b9b4692a8e2a5bf22d27efb/10-ten-dollar-bill-note-bills-notes-dollars-c4yc19.jpg";}
+            else{
+                document.getElementById("B3").src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";
+            }
+            b3 = !b3;
+
+
+        }
+        var C3=true;
+        function flipC3(){if(C3) {document.getElementById("C3").src="https://s3.amazonaws.com/user-media.venngage.com/252581-821ccb9fbfbbab67cbb44cbdc9e9ba8f.jpg";}
+        else{document.getElementById("C3"). src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";}
+C3=!C3}
+        var C1=true;
+        function flipC1(){if(C1) {document.getElementById("C1").src="https://s3.amazonaws.com/user-media.venngage.com/252581-821ccb9fbfbbab67cbb44cbdc9e9ba8f.jpg";}
+        else{document.getElementById("C1"). src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";}
+            C1=!C1}
+        var C2=true;
+        function flipC2(){if(C2) {document.getElementById("C2").src="http://thesehumansarenuts.com/wp-content/uploads/2015/01/Nothing.jpg";}
+        else{document.getElementById("C2"). src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";}
+            C2=!C2}
+        var A2=true;
+        function flipA2(){if(A2) {document.getElementById("A2").src="http://thesehumansarenuts.com/wp-content/uploads/2015/01/Nothing.jpg";}
+        else{document.getElementById("A2"). src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";}
+            A2=!A2}
+        var A3=true;
+        function flipA3(){if(A3) {document.getElementById("A3").src="https://assets3.thrillist.com/v1/image/1355601/size/tmg-article_tall.jpg";}
+        else{document.getElementById("A3"). src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";}
+            A3=!A3}
+        var B2=true;
+        function flipB2(){if(B2) {document.getElementById("B2").src="https://assets3.thrillist.com/v1/image/1355601/size/tmg-article_tall.jpg";}
+        else{document.getElementById("B2"). src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg";}
+            B2=!B2}
+
+    </script>
+</head>
+
+
+
+<body>
+<div class="row">
+    <div class="col-md-4" onclick="flipA1()"><img  class="card" id="A1" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+    <div class="col-md-4"><img onclick="flipA2()" class="card" id="A2" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+    <div class="col-md-4"><img  onclick="flipA3()"class="card" id="A3" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"><img  onclick="alert('YOU ARE OUT')"class="card" id="B1" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+    <div class="col-md-4"><img onclick="flipB2()"class="card" id="B2" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+    <div class="col-md-4" onclick="flipB3()"><img  class="card" id="B3" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"><img  onclick = "flipC1()"class="card" id="C1" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+    <div class="col-md-4"><img  onclick ="flipC2()"class="card" id="C2" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+    <div class="col-md-4"><img   onclick = "flipC3()"   class="card" id="C3" src="http://i1.sinaimg.cn/gm/cr/2015/0603/2545597451.jpg"></div>
+</div>
+
+</body>
+</html>
+
